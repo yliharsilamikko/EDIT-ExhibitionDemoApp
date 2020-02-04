@@ -11,12 +11,18 @@ const orders_view = (data) => {
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <form action="/order-support" method="POST">
-        <button type="submit">Order Support part</button>
+    <div class="row">
+    <div class="column">
+    <form class="order-form-item" action="/order-support" method="POST">
+        <button class="order-button" type="submit">Order Support part</button>
     </form>
-        <form action="/order-cube" method="POST">
-        <button type="submit">Order Cube part</button>
+    </div>
+    <div class="column">
+    <form class="order-form-item" action="/order-cube" method="POST">
+        <button class="order-button" type="submit">Order Cube part</button>
     </form>
+    </div>
+    </div>
     ${data.count}
     `;
 

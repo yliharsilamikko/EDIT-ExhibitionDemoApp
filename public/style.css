@@ -1,3 +1,26 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.order-button {
+    display: block;
+    border: none;
+    margin: 10px;
+    width: 100%;
+    background-color: rgb(117, 188, 255);
+    text-align: center;
+}
+
 .orders-container {
     width: 100%;
     display: flex;
@@ -13,20 +36,29 @@
     border-radius: 5px;
     border: 1px solid black;
     background-color: white;
+    padding: 10px;
+    color: black;
+    font-family: "Lucida Console";
+    font-size: large;
 }
 
 .wip-order {
     border-radius: 5px;
     background-color: yellow;
+    padding: 10px;
     border: 1px solid black;
+    color: black;
+    font-family: "Lucida Console";
+    font-size: large;
 }
 
 .fin-order {
     border-radius: 5px;
-    font-family: "Lucida Console";
-    font-size: medium;
-
     background-color: rgb(81, 224, 81);
+    padding: 10px;
     border: 1px solid black;
     color: white;
+    font-family: "Lucida Console";
+    font-size: large;
+
 }
