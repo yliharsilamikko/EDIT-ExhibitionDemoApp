@@ -6,7 +6,7 @@ const orders_view = (data) => {
     <html>
     <head>
     <title>Manufacturing Company</title>
-    <meta http-equiv="refresh" content="50" />
+    <meta http-equiv="refresh" content="10" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     </head>
