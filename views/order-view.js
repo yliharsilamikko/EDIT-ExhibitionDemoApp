@@ -6,24 +6,23 @@ const orders_view = (data) => {
     <html>
     <head>
     <title>Manufacturing Company</title>
-    <meta http-equiv="refresh" content="5" />
+    <meta http-equiv="refresh" content="50" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <div class="row">
     <div class="column">
-    <form class="order-form-item" action="/order-support" method="POST">
+    <form class="button-form" action="/order-support" method="POST">
         <button class="order-button" type="submit">Order Support part</button>
     </form>
     </div>
     <div class="column">
-    <form class="order-form-item" action="/order-cube" method="POST">
+    <form class="button-form" action="/order-cube" method="POST">
         <button class="order-button" type="submit">Order Cube part</button>
     </form>
     </div>
     </div>
-    ${data.count}
     `;
 
     if (!orders) {

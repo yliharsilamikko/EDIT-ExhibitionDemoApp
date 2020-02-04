@@ -10,14 +10,29 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    padding: 10px;
+    align-items: center;
 }
 
-.order-button {
-    display: block;
+.button-form {
+    display: flex;
     border: none;
     margin: 10px;
     width: 100%;
+    min-height: 15vh;
+    text-align: center;
+}
+
+.order-button {
+    border-radius: 5px;
+    border: 5px solid black;
+    display: block;
+    margin: 0px;
+    width: 100%;
     background-color: rgb(117, 188, 255);
+    color: white;
+    font-family: "Lucida Console";
+    font-size: xx-large;
     text-align: center;
 }
 

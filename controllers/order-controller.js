@@ -23,10 +23,8 @@ const get_timestamp = () => {
 };
 
 
-let count = 0;
 let order_number = 1000;
 const get_orders = (req, res, next) => {
-    count++;
     let options = {
         method: 'GET',
         uri: config.flowcontrol_uri + '/api/orders/get',
@@ -69,11 +67,10 @@ const get_orders = (req, res, next) => {
 
         let data = {};
         data.orders = orders;
-        data.count = count;
         return res.send(order_view.orders_view(data));
     }).catch((err) => {
         console.log(err);
-        return res.redirect('/');
+        return res.redirect('/error');
     });
 };
 
